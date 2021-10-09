@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="rgba(75, 0, 130, 1)" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Document</title>
+        <link rel="stylesheet" href="resources/css/all.min.css" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/works.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link rel="stylesheet" href="resources/css/testimonial.css" />
+        <link rel="stylesheet" href="resources/css/services.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <audio
+            src="resources/audio/background (mp3cut.net).mp3"
+            loop
+            hidden
+            autoplay
+        ></audio>
+        <!-- NAVIGATION SECTION -->
+        <nav>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="240px"
+                height="74px"
+            >
+                <text
+                    kerning="auto"
+                    font-family="Myriad Pro"
+                    fill="rgb(0, 0, 0)"
+                    font-size="90px"
+                    x="5px"
+                    y="65px"
+                >
+                    <tspan
+                        font-size="90px"
+                        font-family="Vladimir Script"
+                        fill="transparent"
+                    >
+                        Shuvro
+                    </tspan>
+                </text>
+            </svg>
+
+            <!-- HAMBURGER MENU -->
+            <input type="checkbox" id="burger" />
+            <label for="burger" class="hamburger">
+                <div class="bar"></div>
+            </label>
+            <ul>
+                <li style="--i: 1">
+                    <a href="#" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512"
+                        >
+                            <!--
+                  Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                  License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                            />
+                        </svg>
+                        <span class="field-name">Home</span>
+                    </a>
+                </li>
+                <li style="--i: 2">
+                    <a href="#about" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 552"
+                        >
+                            <!--
+                Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"
+                            />
+                        </svg>
+                        <span class="field-name">About</span>
+                    </a>
+                </li>
+                <li style="--i: 3">
+                    <a href="#services" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                        >
+                            <!--
+                Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
+                            />
+                        </svg>
+                        <span class="field-name">Services</span>
+                    </a>
+                </li>
+                <li style="--i: 4">
+                    <a href="#works" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                        >
+                            <!--
+                Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M448 64H64a64 64 0 0 0-64 64v256a64 64 0 0 0 64 64h384a64 64 0 0 0 64-64V128a64 64 0 0 0-64-64zM160 368H80a16 16 0 0 1-16-16v-16a16 16 0 0 1 16-16h80zm128-16a16 16 0 0 1-16 16h-80v-48h80a16 16 0 0 1 16 16zm160-128a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32v-64a32 32 0 0 1 32-32h320a32 32 0 0 1 32 32z"
+                            />
+                        </svg>
+                        <span class="field-name">Works</span>
+                    </a>
+                </li>
+                <li style="--i: 5">
+                    <a href="#testimonial" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"
+                        >
+                            <!--
+                Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"
+                            />
+                        </svg>
+                        <span class="field-name">Testimonial</span>
+                    </a>
+                </li>
+                <li style="--i: 6">
+                    <a href="#contact" class="flex-row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--
+                Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
+                License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                -->
+                            <path
+                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"
+                            />
+                        </svg>
+                        <span class="field-name">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <div class="bg styling">
+                <img src="resources/img/styling-0.1.png" alt="" />
+            </div>
+            <!-- HOME SECTION -->
+            <section class="home">
+                <div class="main-content flex-column">
+                    <div class="introduction flex-row">
+                        <span class="big">honest</span>
+                        <span
+                            >People Does <br />
+                            Works</span
+                        >
+                    </div>
+                    <h1 class="my-name">
+                        Hello, I'm
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="240px"
+                            height="74px"
+                        >
+                            <text
+                                kerning="auto"
+                                font-family="Myriad Pro"
+                                fill="rgb(0, 0, 0)"
+                                font-size="90px"
+                                x="5px"
+                                y="65px"
+                            >
+                                <tspan
+                                    font-size="90px"
+                                    font-family="Vladimir Script"
+                                    fill="transparent"
+                                >
+                                    Shuvro
+                                </tspan>
+                            </text>
+                        </svg>
+                    </h1>
+                    <div class="btn-container flex-wrap">
+                        <a href="#" class="button">Contact Me</a>
+                        <a href="#" class="button">Download CV</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION -->
+            <section class="about" id="about">
+                <h1 class="section-name">
+                    <span>ABOUT</span>
+                </h1>
+                <object
+                    type="image/svg+xml"
+                    data="resources/img/animation.svg"
+                    title="Shuvro Is The Best"
+                ></object>
+                <div class="flex-wrap flex-row content">
+                    <img src="resources/img/avatar-min.png" alt="Shuvro" />
+                    <div class="about-words">
+                        <h3>Hey There!</h3>
+                        <h2>I'm Shuvro</h2>
+                        <div>
+                            <b
+                                >Web Designer
+                                <span class="red">& </span>Developer
+                                <span class="red">& </span>Graphics Designer</b
+                            >
+                        </div>
+                        <p>
+                            Hii, I am a web developer and dedicated
+                            <span class="red">Self employed</span> guy with 2
+                            years of designing experience,
+                            <span class="red">creative coding art</span> and
+                            passionate about how things work and how I can work
+                            with it. Want to consult with me about your next
+                            website?
+                        </p>
+                        <a href="#contact" class="fancy-button">Contact Me</a>
+                        <a href="#" class="fancy-button">Download CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section class="services" id="services">
+                <div class="section-name">
+                    <span>SERVICES</span>
+                </div>
+                <h1 class="text">
+                    I can make strategical, branded and wonderfully designed
+                    web.
+                </h1>
+                <h2>
+                    <span>That Means I Can Offer: </span>
+                    <span></span>
+                </h2>
+                <div class="what-i-do flex-wrap">
+                    <div class="box flex-row">
+                        <img src="resources/img/face.svg" alt="identity" />
+                        <div class="inner-box">
+                            <h1>Identity</h1>
+                            <p>
+                                I concept and create your identity to
+                                communicate your brand message.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex-row">
+                        <img src="resources/img/hand.svg" alt="print" />
+                        <div class="inner-box">
+                            <h1>Print</h1>
+                            <p>
+                                I design effective print materials and take them
+                                from concept to delivery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex-row">
+                        <img src="resources/img/online.svg" alt="Online" />
+                        <div class="inner-box">
+                            <h1>Online</h1>
+                            <p>
+                                I create engaging mobile, tablet and desktop
+                                experiences. Our code is a beautiful as our
+                                design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex-row">
+                        <img src="resources/img/motion1.svg" alt="Motion" />
+                        <div class="inner-box">
+                            <h1>Motion</h1>
+                            <p>
+                                I create visuals and storyboards to deliver your
+                                message through video.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex-row">
+                        <img src="resources/img/camera.svg" alt="Photography" />
+                        <div class="inner-box">
+                            <h1>Photography</h1>
+                            <p>
+                                I provide creative direction and guidance to
+                                ensure your brand message is consistent
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex-row">
+                        <img
+                            src="resources/img/copyright.svg"
+                            alt="Copywriting"
+                        />
+                        <div class="inner-box">
+                            <h1>Copywriting</h1>
+                            <p>
+                                I create original content that simplifies and
+                                communicates your message
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <span class="fancy-button"
+                        >Learn More <i class="fas fa-angle-right"></i
+                    ></span>
+                    <span></span>
+                </a>
+            </section>
+            <section class="works" id="works">
+                <div class="section-name">
+                    <span>Works</span>
+                </div>
+                <div class="gallery">
+                    <div class="box">
+                        <img src="resources/img/works/1.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/2.jpg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/3.jpg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/4.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/5.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/6.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/7.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="box">
+                        <img src="resources/img/works/8.jpeg" alt="" />
+                        <h1>Project Name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit, quasi?
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIAL SECTION -->
+            <section class="testimonial" id="testimonial">
+                <div class="section-name">
+                    <span>testimonial</span>
+                </div>
+
+                <!-- .testimonial .reviews -->
+                <div class="flex-wrap reviews">
+                    <!-- .testimonial .reviews .review -->
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Minima, maxime? Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Animi ipsa, beatae,
+                            culpa molestiae autem nemo pariatur fuga cumque
+                            neque quam provident deserunt tempore tempora, odit
+                            exercitationem. Pariatur itaque voluptates harum?
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/Bruno Castrioto.jpeg"
+                                alt="Bruno Castrioto"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="flex-column name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Bruno Castrioto</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at xyz.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eligendi facere est odio rem, velit quia
+                            dolore nobis itaque laboriosam dolorum.
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/Katho Mutodo.jpeg"
+                                alt="Katho Mutodo"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Katho Mutodo</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at abc.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odio ad culpa aperiam, iste numquam
+                            necessitatibus placeat architecto. Officiis soluta
+                            quia esse error sed. Cupiditate, eaque inventore
+                            dolor quae qui vero!
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/ravi rawshan.jpeg"
+                                alt="Ravi Rawshan"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Ravi Rawshan</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at ert.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, neque.
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/Styves-Exantus.jpeg"
+                                alt="Styves Exantus"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Styves Exantus</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at tot.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Consectetur ipsa voluptatem dignissimos
+                            numquam magni voluptatum, officiis quibusdam maxime
+                            accusamus unde quaerat natus quae corrupti odio,
+                            libero laboriosam iste. Ducimus, quisquam?
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/tran-long.jpeg"
+                                alt="Tran Long"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Tran Long</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at wer.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column review">
+                        <!-- .testimonial .reviews .review .sentence -->
+                        <p class="sentence">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Doloribus in id perferendis modi assumenda ut
+                            sint expedita aut optio? Itaque necessitatibus nobis
+                            aliquam nemo? Eos, deserunt mollitia obcaecati
+                            accusamus ullam in consequuntur eius sapiente culpa
+                            neque, amet dicta quo ex voluptate hic fugiat.
+                            Voluptatem blanditiis similique ipsa at, quis
+                            dignissimos.
+                        </p>
+                        <!-- .testimonial .reviews .review .famous-name -->
+                        <div class="flex-row famous-name">
+                            <!-- .testimonial .reviews .review .famous-name img -->
+                            <img
+                                src="resources/img/Vicram-Rahord.jpeg"
+                                alt="Vicram Rahord"
+                            />
+                            <!-- .testimonial .reviews .review .famous-name .name-info -->
+                            <div class="name-info">
+                                <!-- .testimonial .reviews .review .famous-name h2 -->
+                                <h2>Vicram Rahord</h2>
+                                <!-- .testimonial .reviews .review .famous-name .stars -->
+                                <div class="stars">
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <!-- .testimonial .reviews .review .famous-name p -->
+                                <p>CEO at xyz.ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-button">
+                    <a href="#" class="see-more fancy-button"
+                        >See All <i class="fas fa-arrow-right"></i
+                    ></a>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION
+      available selectors:
+      1) #contact > div.contact-container > div.contact-list > div.information-container > div.information > img + span
+  
+      2) #contact > div.contact-container > div.contact-list > div.social-buttons > a > i.fab + span
+      3) #contact > div.contact-container > form > .input-box > input + label
+      -->
+            <section class="contact" id="contact">
+                <h1 class="section-name">
+                    <span>contact</span>
+                </h1>
+                <!-- this takes the main part. -->
+                <div class="flex-row contact-container">
+                    <!-- takes the information box with the social buttons. -->
+                    <div class="flex-column contact-list">
+                        <!-- takes information container only -->
+                        <div class="information-container">
+                            <!-- a particular information -->
+                            <div class="flex-row information">
+                                <img
+                                    src="resources/img/map-icon.svg"
+                                    alt="https://www.freepik.com/"
+                                    title="https://www.freepik.com"
+                                />
+                                <span
+                                    ><a href="#">
+                                        Sherpur town, Sherpur, <br />
+                                        Mymensingh, Bangladesh
+                                    </a></span
+                                >
+                            </div>
+                            <div class="information flex-row">
+                                <img
+                                    src="resources/img/email-icon.svg"
+                                    alt="https://www.freepik.com"
+                                    title="https://www.freepik.com"
+                                />
+                                <span
+                                    ><a href="mailto:example@gmail.com"
+                                        >example@gmail.com</a
+                                    >
+                                    <br />
+                                    <a href="mailto:example@gmail.com"
+                                        >example@gmail.com</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="information flex-row">
+                                <img
+                                    src="resources/img/telephone-icon.svg"
+                                    alt="https://www.freepik.com"
+                                    title="https://www.freepik.com"
+                                />
+                                <span
+                                    ><a href="+8801712345678">+8801712345678</a>
+                                    <br />
+                                    <a href="+8801712345678"
+                                        >+8801712345678</a
+                                    ></span
+                                >
+                            </div>
+                        </div>
+                        <!-- social buttons only. -->
+                        <div class="flex-wrap social-buttons">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-codepen"></i>
+                                <span>CodePen</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- form section.  -->
+                    <form action="#" autocomplete="off">
+                        <h1>First, we understand you, then we work for you.</h1>
+                        <div class="input-box">
+                            <input type="text" id="full_name" required />
+                            <label for="full_name">Full Name</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" required />
+                            <label for="email">Email</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="subject" required />
+                            <label for="subject">Subject</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-box ta">
+                            <textarea
+                                cols="30"
+                                rows="10"
+                                id="message"
+                                required
+                            ></textarea>
+                            <label for="message">Message</label>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="flex-row input-box-checker">
+                            <input type="checkbox" id="question" />
+                            <span for="question">As a client?</span>
+                            <label for="question"></label>
+                        </div>
+                        <input
+                            type="submit"
+                            value="Send Email"
+                            class="fancy-button"
+                        />
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="footer flex-column">
+            <div class="footer-links flex-row">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="240px"
+                    height="74px"
+                >
+                    <text
+                        kerning="auto"
+                        font-family="Myriad Pro"
+                        fill="rgb(0, 0, 0)"
+                        font-size="90px"
+                        x="5px"
+                        y="65px"
+                    >
+                        <tspan
+                            font-size="90px"
+                            font-family="Vladimir Script"
+                            fill="transparent"
+                        >
+                            Shuvro
+                        </tspan>
+                    </text>
+                </svg>
+                <div class="footer-navigation">
+                    <h3>Navigation Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#works">Works</a>
+                    <a href="#testimonial">Testimonial</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="useful-link">
+                    <h3>Useful Links</h3>
+                    <a href="#">Over The Horizon</a>
+                    <a href="#">Audio App --- Musika</a>
+                    <a href="#">Dynamic Portfolio Webpage</a>
+                    <a href="#">Open Hearts --- Chat app</a>
+                    <a href="#">Mobile Phone Seller</a>
+                    <a href="#">Smoothy --- Chat Bot</a>
+                </div>
+                <div class="find-me">
+                    <div class="social-buttons">
+                        <h3>Social Links</h3>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-codepen"></i>
+                            <span>CodePen</span>
+                        </a>
+                    </div>
+                    <a href="tel:+8801715566066">PHONE: +8801715566066</a>
+                    <a href="mailto:shuvra@gmail.com"
+                        >EMAIL: shuvra@gmail.com</a
+                    >
+                    <a href="#">ADDRESS: Dhaka Bangladesh</a>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; and made with 💙 By @shu-vro
+            </div>
+            <a href="#" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <script src="resources/js/main.js"></script>
+    </body>
+</html>
+
+<!-- 60bf343fee4dc -->

@@ -1,0 +1,107 @@
+.testimonial {
+    z-index: 2;
+}
+
+.testimonial .reviews {
+    position: relative;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+.testimonial .reviews .review {
+    position: relative;
+    width: 350px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.testimonial .reviews .review .sentence {
+    text-align: center;
+    position: relative;
+    opacity: 0.6;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 14px 10px;
+}
+
+.testimonial .reviews .review .sentence::before,
+.testimonial .reviews .review .sentence::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    z-index: -1;
+}
+
+.testimonial .reviews .review .sentence::before {
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid black;
+}
+
+.testimonial .reviews .review .sentence::after {
+    width: 0;
+    height: 0;
+    left: 16px;
+    border: 24px solid transparent;
+    border-top: 24px solid var(--bg-color-1);
+}
+
+.testimonial .reviews .review .famous-name img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .reviews .review .famous-name .name-info {
+    margin-left: 25px;
+    text-align: center;
+}
+
+.testimonial .reviews .review .famous-name .name-info > * {
+    margin: 0;
+}
+
+.testimonial-button {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.see-more {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    --fancy-button-background: #4b0082;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+}
+
+.see-more:hover {
+    color: white;
+    --d: 150%;
+}
+
+.see-more i {
+    transition: transform 0.3s ease-in-out;
+}
+.see-more:hover i {
+    transform: translateX(10px);
+}
+
+@media (max-width: 692px) {
+    .testimonial .reviews .review:nth-child(4),
+    .testimonial .reviews .review:nth-child(5),
+    .testimonial .reviews .review:nth-child(6) {
+        display: none;
+    }
+
+    .fancy-button {
+        --d: 150px;
+        color: white;
+    }
+}

@@ -1,0 +1,128 @@
+#burger {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    --bar-color: white;
+    display: none;
+    z-index: 100;
+    transition: 0.2s 0.6s ease-in-out;
+}
+
+.hamburger .bar {
+    width: 40px;
+    height: 5px;
+    border-radius: 100px;
+    background: var(--bar-color);
+    transition: 0.3s ease-in-out;
+}
+
+/* bottom */
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 12px) rotate(0deg);
+    width: 40px;
+    height: 5px;
+    background: var(--bar-color);
+    border-radius: 100px;
+    transform-origin: 40px center;
+    transition: transform 0.2s 0.3s ease-in-out;
+}
+
+/* top */
+.hamburger .bar::after {
+    transform: translate(-50%, -15px);
+    transition: transform 0.2s 0.3s ease-in-out;
+}
+
+#burger:checked ~ .hamburger .bar {
+    width: 0;
+}
+
+#burger:checked ~ .hamburger .bar::after {
+    transform: translate(-50%, 0);
+}
+
+#burger:checked ~ .hamburger .bar::before {
+    transform: translate(-100%, 20px) rotate(90deg);
+}
+
+#burger:checked ~ .hamburger {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 523px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        mix-blend-mode: normal;
+    }
+
+    nav ul {
+        position: absolute;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: -15px;
+        left: -100%;
+        padding: 0;
+        background: #4646464f;
+        backdrop-filter: blur(5px);
+        transition: 0.5s ease-in-out;
+    }
+
+    #burger:checked ~ ul {
+        left: 0;
+    }
+
+    li a span {
+        margin-left: 0;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: inherit;
+        right: -100%;
+        transform: translate(75%, -50%);
+        width: 180px;
+        font-size: 0.75em;
+    }
+
+    li a:hover span {
+        top: 50%;
+        left: inherit;
+        right: -100%;
+        transform: translate(75%, -50%);
+    }
+
+    nav > svg,
+    .my-name svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 354px) {
+    nav ul li {
+        margin-right: 60px;
+    }
+}
