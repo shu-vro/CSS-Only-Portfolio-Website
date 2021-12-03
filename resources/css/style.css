@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @font-face {
     font-family: "Broadway";
-    src: url("../webfonts/BROADW.TTF");
+    src: url("../webfonts/BROADW.ttf");
 }
 
 @font-face {
-    font-family: 'MyWebFont';
+    font-family: 'Vladimir Script';
     src: url('../webfonts/VLADIMIR.TTF'); /* IE9 Compat Modes */
   
 }
