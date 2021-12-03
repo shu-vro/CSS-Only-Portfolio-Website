@@ -5,6 +5,12 @@
     src: url("../webfonts/BROADW.TTF");
 }
 
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../webfonts/VLADIMIR.TTF'); /* IE9 Compat Modes */
+  
+}
+
 html {
     scroll-behavior: smooth;
 }
